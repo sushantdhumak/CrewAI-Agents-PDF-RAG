@@ -1,0 +1,17 @@
+pdf_rag_writing_task:
+  description: >
+    Retrieve and provide a clear and accurate answer to the given question by searching through the PDF content and returning the most relevant information.
+    Here is the question: {input}
+  expected_output: >
+    A concise and precise answer based on the PDF content, directly addressing the query.
+  agent: pdf_rag_writer
+
+
+rag_summarizing_task:
+  description: >
+    Create a comprehensive report by reviewing the provided context, expanding each topic into a detailed section, 
+    and incorporating all relevant information.
+  expected_output: >
+    A detailed, well-structured report in markdown format, featuring main topics with corresponding full sections of information.
+    Formatted as markdown without '```'
+  agent: rag_summarizer
